@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #F6F6F6;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 20px;
+  border:2px solid #BFECEC;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #FFFFFF;
+  width: 100%;
+  border:1px solid #000;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3698A1;
+  width: 50%;
+  border: 0;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 70px;  
+  margin-left:25%;
+border:1px solid #064179;
+}
+
+.cadastre{
+	width: 352px; 
+	background: #BFECEC;
+	padding: 4px;
+	margin-top: -100px;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+fomr. cadastre a:link {
+ color: #00F;
+}
+  .form .messagem {
+  margin: 3px; 
+  color: #363636;
+}
+
+
+body {
+  background: #E5E5E5; 
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;   
+}
