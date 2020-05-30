@@ -151,7 +151,7 @@ public class ProdutoDAO extends DAO<Produto, String>
 
     public Produto buscaProdutoMaisVendido() throws SQLException
     {
-        PreparedStatement preparedStatement = criaPreparedStatement("select count(p) total, p.id, p.nome, p.descricao, p.preco, p.imagem, p.categoria_id from produto p inner join produto_pedido pp on p.id = pp.produto group by (p.id) order by total limit 1");
+        PreparedStatement preparedStatement = criaPreparedStatement("select count(p) total, p.id, p.nome, p.descricao, p.preco, p.imagem, p.categoria_id from produto p inner join produto_pedido pp on p.id = pp.produto group by (p.id) order by total desc limit 1");
         ResultSet resultSet = preparedStatement.executeQuery();
         if (resultSet.next()) {
             return criaProduto(resultSet);

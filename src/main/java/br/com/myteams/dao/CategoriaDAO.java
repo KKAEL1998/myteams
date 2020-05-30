@@ -64,7 +64,7 @@ public class CategoriaDAO extends DAO<Categoria, Long>
 
     public List<Categoria> listaTodosQuePossuiProdutosAssociadosOrdenada() throws SQLException
     {
-        PreparedStatement preparedStatement = criaPreparedStatement("select c.id, c.nome from categoria c inner join produto p on c.id = p.categoria_id order by c.nome");
+        PreparedStatement preparedStatement = criaPreparedStatement("select distinct c.id, c.nome from categoria c inner join produto p on p.categoria_id = c.id order by c.nome");
         ResultSet resultSet = preparedStatement.executeQuery();
         List<Categoria> categorias = new ArrayList<>();
         while (resultSet.next()) {

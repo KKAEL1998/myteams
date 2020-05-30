@@ -1,7 +1,7 @@
 <%@page import="java.util.List"%>
 <%@page import="br.com.myteams.model.produto.Produto"%>
 <%@include file="header.jsp" %>
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <div class="container">
     <div class="row">

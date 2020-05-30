@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!--Inicio Footer -->
 <footer class="page-footer font-small mt-4 bg-info text-white">
     <div class="footer-copyright text-center py-4">
