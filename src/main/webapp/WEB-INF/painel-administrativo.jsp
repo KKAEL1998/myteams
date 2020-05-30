@@ -54,7 +54,7 @@
                                                     </div>
                                                     <div class="col text-right">
                                                         <a href="${pageContext.request.contextPath}/admin/pedido/avanca/${pedido.id}"
-                                                           class="btn btn-primary">Avan�ar
+                                                           class="btn btn-primary">Avançar
                                                             para ${pedido.proximaEtapa.descricao}</a>
                                                     </div>
                                                 </div>
@@ -84,14 +84,14 @@
                                                     </div>
 
                                                 </div>
-                                                <h3>Endere�o de entrega</h3>
+                                                <h3>Endereço de entrega</h3>
                                                 <div class="row">
                                                     <div class="col-4">
-                                                        <p><strong>Endere�o</strong></p>
+                                                        <p><strong>Endereço</strong></p>
                                                         <p>${pedido.usuario.endereco.rua}</p>
                                                     </div>
                                                     <div class="col-4">
-                                                        <p><strong>N�mero</strong></p>
+                                                        <p><strong>Número</strong></p>
                                                         <p>${pedido.usuario.endereco.numero}</p>
                                                     </div>
                                                     <div class="col-4">
