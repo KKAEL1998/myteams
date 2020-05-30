@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@include file="header.jsp" %>
 <section id="sobre">
     <div class="container">
@@ -7,7 +8,7 @@
 
             <div class="col-sm-12 sobre_espaÃ§o">
                 <!--add as colunas + espaÃ§o abaixo -->
-                <h1 class="tinta"> Sobre nós </h1>
+                <h1 class="tinta"> Sobre nï¿½s </h1>
             </div>
 
             <div class="col-sm-6 sobre_espaÃ§o">
@@ -18,8 +19,8 @@
 
             <div class="col-sm-6">
                 <!--add as colunas -->
-                <p class="tintaf">A MyTeams foi fundada tendo como principal objetivo prover diversão e entretenimento , com jogos de vários estilos,
-                    para diferentes preferência  de gamers com preços acesseciveis. </p>
+                <p class="tintaf">A MyTeams foi fundada tendo como principal objetivo prover diversï¿½o e entretenimento , com jogos de vï¿½rios estilos,
+                    para diferentes preferï¿½ncia  de gamers com preï¿½os acesseciveis. </p>
             </div>
         </div>
     </div>

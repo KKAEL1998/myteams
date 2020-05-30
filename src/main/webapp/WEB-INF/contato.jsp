@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@include file="header.jsp" %>
 
 <section id="section-contato">
@@ -22,9 +23,9 @@
                     <button type="submit" class="botao">Enviar</button>
                 </div>
                 <div class="col-sm-6">
-                    <h3>Endereço</h3>
-                    <p class="contact__p">Av. das Castanheiras, S/N - Lote 3700 - Águas Claras <br>Brasília - DF,
-                        70297-400 Centro Universitário Euro-Americano</p>
+                    <h3>Endereï¿½o</h3>
+                    <p class="contact__p">Av. das Castanheiras, S/N - Lote 3700 - ï¿½guas Claras <br>Brasï¿½lia - DF,
+                        70297-400 Centro Universitï¿½rio Euro-Americano</p>
                     <h3>Redes Sociais</h3>
                     <a href="http://facebook.com" target="_blank"><img class="botaofb" src="img/fbbotao.png"></a>
                     </li>
