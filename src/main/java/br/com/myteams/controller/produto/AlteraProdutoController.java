@@ -1,5 +1,6 @@
 package br.com.myteams.controller.produto;
 
+import br.com.myteams.dao.CategoriaDAO;
 import br.com.myteams.dao.ProdutoDAO;
 import br.com.myteams.exception.NegocioException;
 import br.com.myteams.model.categoria.Categoria;
@@ -75,6 +76,7 @@ public class AlteraProdutoController extends HttpServlet
                 }
 
                 req.setAttribute("produto", produto);
+                req.setAttribute("categorias", new CategoriaDAO(DBUtil.getConnection()).listaTodos());
             }
             catch (SQLException | NegocioException ex)
             {

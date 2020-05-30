@@ -1,0 +1,33 @@
+@import "_navbar.css";
+@import "_banner.css";
+@import "_sobre.css";
+@import "_produtos.css";
+@import "_contato.css";
+@import "_footer.css";
+
+@import "_login.css";
+@import "_cadastro.css";
+@import "_pesquisa.css";
+@import "_perfil.css";
+
+h1{
+    font-family: Arial;
+}
+p{
+    font-family: Georgia;
+}
+
+.testando {
+    
+    color:black;
+    text-align: center; 
+    margin-bottom: 50px ;     
+}
+
+.media.produto-carrinho {
+    margin: 20px 0;
+}
+
+.media.produto-carrinho img, .media.produto-carrinho .espaco-img {
+    width: 100px;
+}

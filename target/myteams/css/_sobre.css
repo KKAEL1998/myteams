@@ -1,0 +1,33 @@
+.tinta {
+    color:#60b1cf;
+    text-align: center;        
+}
+.sobre_espaço{
+    padding-bottom: 2em; /* add espaço abaixo */
+}
+.tintap { 
+    color:black;    
+    font-size:18px;    
+}
+
+.tintaf { 
+    color:black;    
+    font-size:18px;
+}
+    
+.sobre_imagem{
+    width: 80%;
+    height : 60%;
+}
+
+.fundo{
+    background-color: beige;
+}
+
+.testando {
+    
+    color:black;
+    text-align: center; 
+    margin-bottom: -50px ;     
+}
+

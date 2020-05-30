@@ -1,0 +1,12 @@
+.navbar-brand img{
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 667px) {
+    .form-inline input{
+        width: 180px;
+        margin-right: 6px;
+    }
+}
