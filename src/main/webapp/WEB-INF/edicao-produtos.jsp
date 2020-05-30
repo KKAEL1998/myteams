@@ -1,4 +1,3 @@
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@include file="header.jsp" %>
 <div class="container">
     <h1>Alterar/Excluir Produtos</h1>
@@ -37,7 +36,7 @@
 </div>
 <script>
     if (location.search === '?erro=fk') {
-        alert('Vocï¿½ nï¿½o pode remover esse produto, pois ele jï¿½ foi incluido em um pedido!');
+        alert('Você não pode remover esse produto, pois ele já foi incluido em um pedido!');
     }
 </script>
 <%@include file="footer.jsp" %>

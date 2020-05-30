@@ -1,4 +1,3 @@
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@include file="header.jsp" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!--Inicio Cadastro -->
@@ -49,11 +48,11 @@
                                         <input id="cep" type="text" class="form-control" name="cep" required value="${usuario.endereco.cep}">
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="rua">Endereï¿½o</label>
+                                        <label for="rua">Endereço</label>
                                         <input id="rua" type="text" class="form-control" name="rua" required value="${usuario.endereco.rua}">
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="last_name">Nï¿½mero</label>
+                                        <label for="last_name">Número</label>
                                         <input id="last_name" type="text" class="form-control" name="numero" required value="${usuario.endereco.numero}">
                                     </div>
 

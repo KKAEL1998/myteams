@@ -1,4 +1,3 @@
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@include file="header.jsp" %>
 <div class="container">
     <h1>Painel Administrativo</h1>
@@ -16,9 +15,6 @@
                         </div>
                         <div class="col">
                             <a href="${pageContext.request.contextPath}/admin/produtos" class="btn btn-primary d-block"><i class="fas fa-user-plus"></i> Alterar/Excluir Produtos</a>
-                        </div>
-                        <div class="col">
-                            <a href="${pageContext.request.contextPath}/admin/nova-categoria" class="btn btn-primary d-block"><i class="fas fa-user-plus"></i> Nova Categoria</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +41,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="col text-right">
-                                                        <a href="${pageContext.request.contextPath}/admin/pedido/avanca/${pedido.id}" class="btn btn-primary">Avanï¿½ar para ${pedido.proximaEtapa.descricao}</a>
+                                                        <a href="${pageContext.request.contextPath}/admin/pedido/avanca/${pedido.id}" class="btn btn-primary">Avançar para ${pedido.proximaEtapa.descricao}</a>
                                                     </div>
                                                 </div>
                                             </h2>
@@ -72,14 +68,14 @@
                                                     </div>
 
                                                 </div>
-                                                <h3>Endereï¿½o de entrega</h3>
+                                                <h3>Endereço de entrega</h3>
                                                 <div class="row">
                                                     <div class="col-4">
-                                                        <p><strong>Endereï¿½o</strong></p>
+                                                        <p><strong>Endereço</strong></p>
                                                         <p>${pedido.usuario.endereco.rua}</p>
                                                     </div>
                                                     <div class="col-4">
-                                                        <p><strong>Nï¿½mero</strong></p>
+                                                        <p><strong>Número</strong></p>
                                                         <p>${pedido.usuario.endereco.numero}</p>
                                                     </div>
                                                     <div class="col-4">

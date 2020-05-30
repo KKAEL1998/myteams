@@ -69,15 +69,14 @@ public class ProdutoDAO extends DAO<Produto, String>
     public void atualiza(Produto entidade) throws SQLException
     {
         PreparedStatement preparedStatement = getConnection()
-                .prepareStatement("update produto set nome=?, descricao=?, preco=?, imagem=?, categoria_id=?"
+                .prepareStatement("update produto set nome=?, descricao=?, preco=?, imagem=?"
                         + "where id=?");
         // Parameters start with 1
         preparedStatement.setString(1, entidade.getNome());
         preparedStatement.setString(2, entidade.getDescricao());
         preparedStatement.setString(3, entidade.getPreco().toString());
         preparedStatement.setString(4, entidade.getImagem());
-        preparedStatement.setLong(5, entidade.getCategoria().getId());
-        preparedStatement.setString(6, entidade.getId());
+        preparedStatement.setString(5, entidade.getId());
         preparedStatement.executeUpdate();
 
     }

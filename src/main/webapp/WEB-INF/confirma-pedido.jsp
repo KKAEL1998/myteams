@@ -1,12 +1,11 @@
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@include file="header.jsp" %>
 <div class="container">
     <div class="card card-primary">
-        <div class="card-header"><h4>Confirmaï¿½ï¿½o do Pedido</h4></div>
+        <div class="card-header"><h4>Confirmação do Pedido</h4></div>
 
         <div class="card-body">
             <fieldset>
-                <legend>Endereï¿½o de entrega</legend>
+                <legend>Endereço de entrega</legend>
                 <div><b>Rua:</b> ${sessionScope.usuario.endereco.rua}</div>
                 <div><b>Numero:</b> ${sessionScope.usuario.endereco.numero}</div>
                 <div><b>Complemento:</b> ${sessionScope.usuario.endereco.complemento}</div>
@@ -22,7 +21,7 @@
                         <div class="row font-weight-bold">
                             <div class="col-6 text-center">Produto</div>
                             <div class="col-3 text-center">Quantidade</div>
-                            <div class="col-3 text-center">Preï¿½o unitario</div>
+                            <div class="col-3 text-center">Preço unitario</div>
                         </div>
                     </div>
                 </div>
@@ -53,18 +52,18 @@
                 <form action="${pageContext.request.contextPath}/pedido" method="post">
                     <div class="row">
                         <div class="form-group col-6">
-                            <label for="nome">Numero do cartï¿½o</label>
+                            <label for="nome">Numero do cartão</label>
                             <input id="nome" type="text" class="form-control" name="numero_cartao" autofocus required>
                         </div>
 
                         <div class="form-group col-6">
-                            <label for="nome">Nome no cartï¿½o</label>
+                            <label for="nome">Nome no cartão</label>
                             <input id="nome" type="text" class="form-control" name="nome_cartao" required>
                         </div>
 
 
                         <div class="form-group col-6">
-                            <label for="nome">Cï¿½digo de seguranca</label>
+                            <label for="nome">Código de seguranca</label>
                             <input id="nome" type="text" class="form-control" name="codigo_seguranca" required>
                         </div>
                     </div>
