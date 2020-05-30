@@ -4,6 +4,7 @@ drop table if exists usuario cascade;
 drop table if exists produto cascade;
 drop table if exists produto_pedido cascade;
 drop table if exists pedido cascade;
+drop table if exists categoria cascade;
 
 create sequence loja_seq start 1;
 
@@ -55,3 +56,18 @@ create table produto_pedido
     quantidade int          not null,
     valorTotal varchar(13)  not null
 );
+
+create table categoria
+(
+    id   bigint      not null,
+    nome varchar(50) not null
+);
+
+alter table categoria
+    add primary key (id);
+
+alter table produto
+    add column categoria_id bigint;
+
+alter table produto
+    add foreign key (categoria_id) references categoria;
