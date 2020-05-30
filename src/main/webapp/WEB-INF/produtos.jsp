@@ -28,29 +28,31 @@
             </c:if>
         </div>
         <div class="col-12 col-sm-9">
-            <c:forEach var="produto" items="${produtos}">
-                <div class="col-md-6 col-lg-3">
-                    <a href="${pageContext.request.contextPath}/produto/${produto.id}">
-                        <div class="card">
-                            <img class="card-img-top" src="${produto.imagem}" alt="Foto produto">
-                            <div class="card-body">
-                                <h4 class="card-title"><a
-                                        href="${pageContext.request.contextPath}/produto/${produto.id}"
-                                        class="text-dark" title="Ver produto">${produto.nome}</a></h4>
-                                <div class="row card-infos">
-                                    <div class="col">
-                                        <p class="item-price"><span>R$${produto.preco}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <a href="${pageContext.request.contextPath}/carrinho/adiciona/${produto.id}"
-                                           class="btn btn-success btn-block">Add ao carrinho</a>
+            <div class="row">
+                <c:forEach var="produto" items="${produtos}">
+                    <div class="col-md-4 col-lg-3">
+                        <a href="${pageContext.request.contextPath}/produto/${produto.id}">
+                            <div class="card">
+                                <img class="card-img-top" src="${produto.imagem}" alt="Foto produto">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a
+                                            href="${pageContext.request.contextPath}/produto/${produto.id}"
+                                            class="text-dark" title="Ver produto">${produto.nome}</a></h4>
+                                    <div class="row card-infos">
+                                        <div class="col">
+                                            <p class="item-price"><span>R$${produto.preco}</span></p>
+                                        </div>
+                                        <div class="col">
+                                            <a href="${pageContext.request.contextPath}/carrinho/adiciona/${produto.id}"
+                                               class="btn btn-success btn-block">Add ao carrinho</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-            </c:forEach>
+                        </a>
+                    </div>
+                </c:forEach>
+            </div>
         </div>
     </div>
 </div>
